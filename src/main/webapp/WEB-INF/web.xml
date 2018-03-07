@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns="http://java.sun.com/xml/ns/j2ee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd"
+         version="2.4">
+
+  <display-name>Task Manager</display-name>
+
+  <servlet>
+    <servlet-name>DashboardServlet</servlet-name>
+    <servlet-class>controllers.DashboardServlet</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>CreateTaskServlet</servlet-name>
+    <servlet-class>controllers.CreateTaskServlet</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>LoginServlet</servlet-name>
+    <servlet-class>controllers.LoginServlet</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>LoginErrorServlet</servlet-name>
+    <servlet-class>controllers.LoginErrorServlet</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>RegisterServlet</servlet-name>
+    <servlet-class>controllers.RegisterServlet</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>RegisterErrorServlet</servlet-name>
+    <servlet-class>controllers.RegisterErrorServlet</servlet-class>
+  </servlet>
+
+
+  <servlet-mapping>
+    <servlet-name>DashboardServlet</servlet-name>
+    <url-pattern>/my_dashboard</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>CreateTaskServlet</servlet-name>
+    <url-pattern>/create_task</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>/login</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>LoginErrorServlet</servlet-name>
+    <url-pattern>/login_error</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>RegisterServlet</servlet-name>
+    <url-pattern>/register</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>RegisterErrorServlet</servlet-name>
+    <url-pattern>/register_error</url-pattern>
+  </servlet-mapping>
+
+</web-app>
